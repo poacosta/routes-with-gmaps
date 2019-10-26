@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Pedro O. Acosta Pereira">
+    <title>Drawing Routes with Google Maps(by poacosta)</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Data section -->
+    <div id="floating-panel">
+        <b>Start(A): </b>
+        <select id="start">
+            <option value="Juan Ignacio Ramón 801, Centro, 64000 Monterrey, N.L.">Icalia Labs</option>
+            <option value="Av. Real San Agustin 222, Zona San Agustín, 66260 Monterrey, N.L.">Plaza Fiesta San Agustín</option>
+            <option value="Monterrey International Airport (MTY), Carr. Miguel Alemán Km 24, 66600 Cd Apodaca, N.L.">Monterrey International Airport</option>
+        </select>
+        <b style="margin-left: 10px;">End(B): </b>
+        <select id="end">
+            <option value="Av Insurgentes 2500, Vista Hermosa, 64620 Monterrey, N.L.">Galerías Monterrey</option>
+            <option value="Manuel L. Barragán 325, Anáhuac, 66450 San Nicolás de los Garza, N.L.">Plaza Fiesta Anahuac</option>
+            <option value="Cola de Caballo, 67300 Santiago, Nuevo Leon">Cola de Caballo</option>
+        </select>
+        <b style="margin-left: 10px;">Distance:</b>
+        <b id="distance"></b>
+    </div>
+
+    <!-- Map Canvas -->
+    <div id="map"></div>
+
+    <!-- JS -->
+    <script src="functions.js"></script>
+    
+    <!-- TODO: Before start a demo please put your GMAPS_API_KEY(key=x) below -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=x&callback=initMap">
+    </script>
+</body>
+
+</html>
